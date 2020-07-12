@@ -17,6 +17,7 @@
 		50D1B23324B63DFF0032525F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D1B23124B63DFF0032525F /* Main.storyboard */; };
 		50D1B23524B63E000032525F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D1B23424B63E000032525F /* Assets.xcassets */; };
 		50D1B23824B63E000032525F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D1B23624B63E000032525F /* LaunchScreen.storyboard */; };
+		50ED48A224BB9EC100ED0BDF /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ED48A124BB9EC100ED0BDF /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		50D1B23424B63E000032525F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50D1B23724B63E000032525F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50D1B23924B63E000032525F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50ED48A124BB9EC100ED0BDF /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				50CB9A5724BA52AF00BAAF95 /* Video.swift */,
 				50CB9A5924BA550200BAAF95 /* Model.swift */,
 				50CB9A5B24BA5B8900BAAF95 /* ConstantsTemplate.swift */,
+				50ED48A124BB9EC100ED0BDF /* Response.swift */,
 			);
 			path = YouTube;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50ED48A224BB9EC100ED0BDF /* Response.swift in Sources */,
 				50CB9A5C24BA5B8900BAAF95 /* ConstantsTemplate.swift in Sources */,
 				50D1B23024B63DFF0032525F /* ViewController.swift in Sources */,
 				50D1B22C24B63DFF0032525F /* AppDelegate.swift in Sources */,

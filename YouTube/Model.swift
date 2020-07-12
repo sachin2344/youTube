@@ -14,7 +14,7 @@ struct Model {
         
         //Create a URL object
         let url = URL(string: Constants.API_URL)
-        
+        print("url is",url)
         guard url != nil else {
             return
         }
@@ -27,11 +27,24 @@ struct Model {
             if error != nil || data == nil {
                 return
             }
-            //Parsing the data into video objects
+            do{
+                //Parsing the data into video objects
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                
+                let response = try  decoder.decode(Response.self, from: data!)
+                dump(response)
+                           
+            }catch{
+                print("error in parsing",error)
+            }
+           
         }
         
         //Kick off the task
         dataTask.resume()
     }
+    
+   
     
 }
