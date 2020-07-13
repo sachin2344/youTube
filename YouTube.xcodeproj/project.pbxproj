@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5061B5EA24BCE1DB00C50CBA /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5061B5E924BCE1DB00C50CBA /* VideoTableViewCell.swift */; };
+		50C4359D24BCEF5E003BE57F /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4359C24BCEF5E003BE57F /* CacheManager.swift */; };
 		50CB9A5624BA4FBA00BAAF95 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB9A5524BA4FBA00BAAF95 /* Constants.swift */; };
 		50CB9A5824BA52AF00BAAF95 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB9A5724BA52AF00BAAF95 /* Video.swift */; };
 		50CB9A5A24BA550200BAAF95 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB9A5924BA550200BAAF95 /* Model.swift */; };
@@ -21,7 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		50CB9A5524BA4FBA00BAAF95 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5061B5E924BCE1DB00C50CBA /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		50C4359C24BCEF5E003BE57F /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		50CB9A5524BA4FBA00BAAF95 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		50CB9A5724BA52AF00BAAF95 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		50CB9A5924BA550200BAAF95 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		50CB9A5B24BA5B8900BAAF95 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5061B5EB24BCE20500C50CBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50CB9A5724BA52AF00BAAF95 /* Video.swift */,
+				50CB9A5924BA550200BAAF95 /* Model.swift */,
+				50ED48A124BB9EC100ED0BDF /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5061B5EC24BCE20D00C50CBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5061B5E924BCE1DB00C50CBA /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5061B5ED24BCE21E00C50CBA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50D1B22F24B63DFF0032525F /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5061B5EE24BCE26700C50CBA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				50CB9A5524BA4FBA00BAAF95 /* Constants.swift */,
+				50CB9A5B24BA5B8900BAAF95 /* ConstantsTemplate.swift */,
+				50C4359C24BCEF5E003BE57F /* CacheManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5061B5EF24BCE27100C50CBA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				50D1B23124B63DFF0032525F /* Main.storyboard */,
+				50D1B23624B63E000032525F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		50D1B21F24B63DFF0032525F = {
 			isa = PBXGroup;
 			children = (
@@ -68,16 +117,13 @@
 			children = (
 				50D1B22B24B63DFF0032525F /* AppDelegate.swift */,
 				50D1B22D24B63DFF0032525F /* SceneDelegate.swift */,
-				50D1B22F24B63DFF0032525F /* ViewController.swift */,
-				50D1B23124B63DFF0032525F /* Main.storyboard */,
+				5061B5EF24BCE27100C50CBA /* Storyboards */,
+				5061B5EE24BCE26700C50CBA /* Helper */,
+				5061B5ED24BCE21E00C50CBA /* Controllers */,
+				5061B5EC24BCE20D00C50CBA /* Views */,
+				5061B5EB24BCE20500C50CBA /* Models */,
 				50D1B23424B63E000032525F /* Assets.xcassets */,
-				50D1B23624B63E000032525F /* LaunchScreen.storyboard */,
 				50D1B23924B63E000032525F /* Info.plist */,
-				50CB9A5524BA4FBA00BAAF95 /* Constants.swift */,
-				50CB9A5724BA52AF00BAAF95 /* Video.swift */,
-				50CB9A5924BA550200BAAF95 /* Model.swift */,
-				50CB9A5B24BA5B8900BAAF95 /* ConstantsTemplate.swift */,
-				50ED48A124BB9EC100ED0BDF /* Response.swift */,
 			);
 			path = YouTube;
 			sourceTree = "<group>";
@@ -157,7 +203,9 @@
 				50CB9A5C24BA5B8900BAAF95 /* ConstantsTemplate.swift in Sources */,
 				50D1B23024B63DFF0032525F /* ViewController.swift in Sources */,
 				50D1B22C24B63DFF0032525F /* AppDelegate.swift in Sources */,
+				5061B5EA24BCE1DB00C50CBA /* VideoTableViewCell.swift in Sources */,
 				50D1B22E24B63DFF0032525F /* SceneDelegate.swift in Sources */,
+				50C4359D24BCEF5E003BE57F /* CacheManager.swift in Sources */,
 				50CB9A5A24BA550200BAAF95 /* Model.swift in Sources */,
 				50CB9A5624BA4FBA00BAAF95 /* Constants.swift in Sources */,
 				50CB9A5824BA52AF00BAAF95 /* Video.swift in Sources */,
